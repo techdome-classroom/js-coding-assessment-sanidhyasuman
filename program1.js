@@ -14,10 +14,10 @@ const getTotalIsles = function (grid) {
       grid[r][c] = "W";
 
       // Explore neighbors (up, down, left, right)
-      dfs(r - 1, c); // up
-      dfs(r + 1, c); // down
-      dfs(r, c - 1); // left
-      dfs(r, c + 1); // right
+      dfs(r - 1, c); 
+      dfs(r + 1, c); 
+      dfs(r, c - 1); 
+      dfs(r, c + 1); 
   };
 
   // Traverse the grid
