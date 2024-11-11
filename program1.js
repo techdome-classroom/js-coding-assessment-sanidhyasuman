@@ -10,10 +10,8 @@ const getTotalIsles = function (grid) {
       // Boundary and water check
       if (r < 0 || c < 0 || r >= rows || c >= cols || grid[r][c] === "W") return;
 
-      // Mark this cell as visited
       grid[r][c] = "W";
 
-      // Explore neighbors (up, down, left, right)
       dfs(r - 1, c); 
       dfs(r + 1, c); 
       dfs(r, c - 1); 
