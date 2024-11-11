@@ -7,7 +7,6 @@ const getTotalIsles = function (grid) {
 
   // Helper function to perform DFS
   const dfs = (r, c) => {
-      // Boundary and water check
       if (r < 0 || c < 0 || r >= rows || c >= cols || grid[r][c] === "W") return;
 
       grid[r][c] = "W";
